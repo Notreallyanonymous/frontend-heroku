@@ -6,7 +6,7 @@ const Protected = ({ tokens, setTokens }) => {
 
   const fetchProtectedData = async () => {
     try {
-      const response = await axios.get('http://localhost:5000/api/private', {
+      const response = await axios.get('https://heroku-test-app2-8e7e299a2ebc.herokuapp.com/api/private', {
         headers: {
           Authorization: `Bearer ${tokens.accessToken}`
         }

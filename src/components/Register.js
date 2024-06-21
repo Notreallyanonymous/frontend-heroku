@@ -9,7 +9,7 @@ const Register = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/api/auth/register', {
+      const response = await axios.post('https://heroku-test-app2-8e7e299a2ebc.herokuapp.com/api/auth/register', {
         name,
         email,
         password
